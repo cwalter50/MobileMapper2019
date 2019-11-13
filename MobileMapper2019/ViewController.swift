@@ -90,8 +90,20 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
         let button = UIButton(type: .detailDisclosure)
         pin.rightCalloutAccessoryView = button
-        
         // for a stretch make the button do something cool....
+        
+        
+        // for custom images for certain pins use this snippet
+//        if let title = annotation.title, let actualTitle = title
+//        {
+//            if actualTitle == "Franco Park" // This name depends on location and item
+//            {
+//                pin.image = UIImage(named: "Some Name For image in assets")
+//            }
+//            else {
+//                pin = MKAnnotationView(annotation: annotation, reuseIdentifier: nil) // reinitialize pin to have no image or callout
+//            }
+//        }
         
         return pin
     }
